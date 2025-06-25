@@ -24,7 +24,11 @@ print(number_list[:3])
 print(number_list[-3:])
 
 # Task 3: working witn dictionaries
-books = {'Author 1': 'Diary of the Wimpy Kid',  'Author 2': 'The hunger games', 'Author 3': 'Cat in the hat','Author 4' :'The outsiders'}
+books = {'Jeff Kinney': 'Diary of the Wimpy Kid',  'Suzanne Collins ': 'The hunger games', 'Theodor Geisel ': 'Cat in the hat','S. E. Hinton' :'The outsiders'}
 print(books.keys())
 print(books.values())
-print(books.get('Author 1'))
+print(books.get('Jeff Kinney'))
+(books.pop('Jeff Kinney'))
+print(books)
+del books['Suzanne Collins']
+print(books)
