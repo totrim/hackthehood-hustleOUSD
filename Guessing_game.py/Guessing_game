@@ -1,0 +1,44 @@
+Guessing game - Jessie Gabrie Sebastian
+import random 
+
+def genrate_random_number ()
+    return random.randint(1, 100)
+def get_user_guess()
+ while True
+    try:
+    guess = int(input('Enter your guess 1-100') )
+    if guess >= 1 and guess <= 100:
+    return guess
+    else:
+        print('Enter a valid number: ')
+        expect ValueError:
+        print('invalid input, enter a whole number: ')
+
+def play_guessing_game()
+    Secret_Number = genrate_random_number()
+    attempts = 0
+    while True:
+        guess = get_user_guess()
+        attempts = 0    
+        
+        
+    if guess < Secret_Number:
+            print('The secret number is higher')
+            elif guess > Secret_Number:
+                print('the secret number is lower')
+                else:
+                    print(f'Correct, it took you {attempts} attempts')
+                break
+
+
+def game_loop():
+    while True:
+        play_guessing_game()
+        Play_again = input('Do you want to play again? yes/no:')   
+    if play_again == 'No':
+        print('Thanks for playing')
+        break
+if __name__ == "__main__"
+        game_loop()
+
+        
